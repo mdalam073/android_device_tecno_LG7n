@@ -21,6 +21,9 @@
      for different hardware and product builds.  Do not translate. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     <!-- Show refresh rate controls -->
+     <bool name="config_show_refresh_rate_controls">true</bool>
+
     <!-- Whether to show min refresh rate in display settings -->
     <bool name="config_show_min_refresh_rate_switch">true</bool>
 
@@ -42,4 +45,6 @@
          should be either LOW (1) or HIGH (3).
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
+
+    <string name="bliss_maintainer">Shirayuki39(Shirayuki428)</string>
 </resources>
