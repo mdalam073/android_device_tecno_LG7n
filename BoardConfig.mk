@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/LG8n
+DEVICE_PATH := device/tecno/LG7n
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
@@ -46,7 +46,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lg8n
+TARGET_BOOTLOADER_BOARD_NAME := lg7n
 TARGET_NO_BOOTLOADER := true
 
 # Broken Rules
@@ -58,7 +58,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
 # Display
-TARGET_SCREEN_DENSITY := 396
+TARGET_SCREEN_DENSITY := 296
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U
 
 # Enable F2FS Compression
@@ -132,7 +132,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := LG8n,TECNO-LG8n
+TARGET_OTA_ASSERT_DEVICE := LG7n,TECNO-LG7n
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
@@ -215,4 +215,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Inherit the proprietary files
-include vendor/tecno/LG8n/BoardConfigVendor.mk
+include vendor/tecno/LG7n/BoardConfigVendor.mk

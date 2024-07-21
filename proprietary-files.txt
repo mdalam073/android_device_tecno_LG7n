@@ -1,4 +1,4 @@
-## lg8n package version: LG8n-H894DEFGHI-T-GL-231102V2897, unless stated otherwise
+## lg7n package version: LG7n-H894DEFGHI-T-GL-231102V2897, unless stated otherwise
 
 # AEE
 vendor/lib/libaedv.so
@@ -26,7 +26,6 @@ vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/AudioLog_dynamic.xml
 vendor/lib/hw/audio.primary.mediatek.so
 vendor/lib/hw/audio.r_submix.mediatek.so
-vendor/lib/hw/awinic.audio.effect.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib/audio_common-aidl-cpp.so
@@ -2076,20 +2075,8 @@ vendor/lib64/vendor.fptool.fingerprint@2.0-adapter-helper.so
 vendor/lib64/vendor.fptool.fingerprint@2.0.so
 
 # Firmware
-vendor/firmware/aw87xxx_acf.bin
-vendor/firmware/aw8622x_haptic.bin
-vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
-vendor/firmware/aw8622x_rtp.bin
-vendor/firmware/aw8624_haptic.bin
-vendor/firmware/aw8624_osc_rtp_24K_5s.bin
-vendor/firmware/aw8624_rtp_lighthouse.bin
-vendor/firmware/aw8624_rtp_silk.bin
-vendor/firmware/aw8624_rtp.bin
-vendor/firmware/awinic_params.bin
 vendor/firmware/BT_FW.cfg
-vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/fm_cust.cfg
-vendor/firmware/focaltech_ts_fw_0.bin
 vendor/firmware/gt9886_cfg_90hz6785.bin
 vendor/firmware/gt9886_cfg_90hz6877.bin
 vendor/firmware/gt9886_cfg_90hz6885.bin
@@ -2151,6 +2138,7 @@ vendor/firmware/gt9896s_firmware_6893v04.bin
 vendor/firmware/gt9896s_firmware_6893v05.bin
 vendor/firmware/gt9896s_firmware_6895v01.bin
 vendor/firmware/gt9896s_firmware_6983v01.bin
+vendor/firmware/hdl_firmware.img
 vendor/firmware/lib3a.ccu
 vendor/firmware/mt6627_fm_v1_coeff.bin
 vendor/firmware/mt6627_fm_v1_patch.bin
@@ -2952,15 +2940,20 @@ vendor/lib64/libksensor.so
 vendor/lib64/librgbwlightsensor.so
 
 # TEE
+vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
-vendor/app/mcRegistry/030c0000000000000000000000000000.drbin
-vendor/app/mcRegistry/030c0000000000000000000000000000.tlbin
+vendor/app/mcRegistry/035c0000000000000000000000000000.drbin
+vendor/app/mcRegistry/035c0000000000000000000000000000.tlbin
+vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin
+vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin
+vendor/app/mcRegistry/5020170115e016302017012521300000.drbin
+vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin
+vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin
 vendor/app/mcRegistry/04010000000000000000000000000000.tabin
 vendor/app/mcRegistry/05120000000000000000000000000001.drbin
 vendor/app/mcRegistry/05120000000000000000000000000001.tlbin
 vendor/app/mcRegistry/06090000000000000000000000000000.drbin
 vendor/app/mcRegistry/06090000000000000000000000000000.tlbin
-vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin
 vendor/app/mcRegistry/07061000000000000000000000000000.tlbin
 vendor/app/mcRegistry/07090000000000000000000000000000.drbin
 vendor/app/mcRegistry/07170000000000000000000000000000.drbin
@@ -2970,10 +2963,6 @@ vendor/app/mcRegistry/08040000000000000000000000003419.tabin
 vendor/app/mcRegistry/08050000000000000000000000003419.drbin
 vendor/app/mcRegistry/08050000000000000000000000003419.tlbin
 vendor/app/mcRegistry/08110000000000000000000000000000.tabin
-vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin
-vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin
-vendor/app/mcRegistry/5020170115e016302017012521300000.drbin
-vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin
 vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin
 vendor/app/mcRegistry/ce4550edbcb1662566b006ebcb303050.tabin
 vendor/app/mcRegistry/df1edda8627911e980ae507b9d9a7e7d.tabin
