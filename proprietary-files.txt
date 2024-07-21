@@ -2076,20 +2076,8 @@ vendor/lib64/vendor.fptool.fingerprint@2.0-adapter-helper.so
 vendor/lib64/vendor.fptool.fingerprint@2.0.so
 
 # Firmware
-vendor/firmware/aw87xxx_acf.bin
-vendor/firmware/aw8622x_haptic.bin
-vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
-vendor/firmware/aw8622x_rtp.bin
-vendor/firmware/aw8624_haptic.bin
-vendor/firmware/aw8624_osc_rtp_24K_5s.bin
-vendor/firmware/aw8624_rtp_lighthouse.bin
-vendor/firmware/aw8624_rtp_silk.bin
-vendor/firmware/aw8624_rtp.bin
-vendor/firmware/awinic_params.bin
 vendor/firmware/BT_FW.cfg
-vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/fm_cust.cfg
-vendor/firmware/focaltech_ts_fw_0.bin
 vendor/firmware/gt9886_cfg_90hz6785.bin
 vendor/firmware/gt9886_cfg_90hz6877.bin
 vendor/firmware/gt9886_cfg_90hz6885.bin
@@ -2151,6 +2139,7 @@ vendor/firmware/gt9896s_firmware_6893v04.bin
 vendor/firmware/gt9896s_firmware_6893v05.bin
 vendor/firmware/gt9896s_firmware_6895v01.bin
 vendor/firmware/gt9896s_firmware_6983v01.bin
+vendor/firmware/hdl_firmware.img
 vendor/firmware/lib3a.ccu
 vendor/firmware/mt6627_fm_v1_coeff.bin
 vendor/firmware/mt6627_fm_v1_patch.bin
