@@ -1,4 +1,4 @@
-# Device tree for the Tecno Pova 4 Pro (LG7n)
+# Device tree for the Tecno Pova 4 (LG7n)
 
 ## Device specifications
 
@@ -21,5 +21,5 @@
 
 ## Device Picture
 
-![Tecno Pova 4 Pro](https://fdn2.gsmarena.com/vv/pics/tecno/tecno-pova4-pro-1.jpg)
+![Tecno Pova 4](https://www.tecno-mobile.com/ph/phones/tech-specs/tecspecs/pova-4-13/)
 
