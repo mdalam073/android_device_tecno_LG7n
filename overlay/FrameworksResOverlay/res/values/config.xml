@@ -59,6 +59,56 @@
         <item>255</item>
     </integer-array>
 
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+    values in the config_screenBrightnessNits array. -->
+    <integer-array name="config_screenBrightnessBacklight">
+         <item>1</item>
+         <item>15</item>
+         <item>30</item>
+         <item>45</item>
+         <item>60</item>
+         <item>75</item>
+         <item>90</item>
+         <item>105</item>
+         <item>120</item>
+         <item>135</item>
+         <item>150</item>
+         <item>165</item>
+         <item>180</item>
+         <item>195</item>
+         <item>210</item>
+         <item>225</item>
+         <item>240</item>
+         <item>255</item>
+    </integer-array>
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+    values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+    should be measured with an all white image while the display is in the fully on state.
+    Note that this value should *not* reflect the maximum brightness value for any high
+    brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+    This array should be equal in size to config_screenBrightnessBacklight -->
+    <array name="config_screenBrightnessNits">
+         <item>4.5215</item>
+         <item>33.37784</item>
+         <item>69.09702</item>
+         <item>105.53111</item>
+         <item>141.15657</item>
+         <item>177.40657</item>
+         <item>212.14172</item>
+         <item>247.64085</item>
+         <item>282.03754</item>
+         <item>317.2586</item>
+         <item>351.1292</item>
+         <item>384.87363</item>
+         <item>418.19705</item>
+         <item>451.90884</item>
+         <item>485.0235</item>
+         <item>517.10864</item>
+         <item>548.933</item>
+         <item>580</item>
+    </array>
+
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness
     support.
          The N entries of this array define N + 1 control points as follows:
@@ -119,6 +169,14 @@
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">3000</integer>
+
+    <!-- Screen brightness used to dim the screen when the user activity
+    timeout expires.  May be less than the minimum allowed brightness setting
+    that can be set by the user. -->
+    <integer name="config_screenBrightnessDim">10</integer>
+
+    <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
+    <integer name="config_autoBrightnessLightSensorRate">250</integer>
 
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
@@ -308,7 +366,7 @@
      <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
      <!-- Whether the always on display mode is available. -->
-     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+     <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
 
      <!-- Control whether the always on display mode is enabled by default. This value will be used
      during initialization when the setting is still null. -->
@@ -323,8 +381,8 @@
 
      <array name="config_sfps_sensor_props_0" translatable="false">
           <item></item>     <!-- displayId -->
-          <item>1080</item> <!-- sensorLocationX -->
-          <item>1050</item>  <!-- sensorLocationY -->
+          <item>720</item> <!-- sensorLocationX -->
+          <item>775</item>  <!-- sensorLocationY -->
           <item>210</item>  <!-- sensorRadius -->
      </array>
 </resources>

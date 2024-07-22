@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
     <item name="ambient.on.display0">0.1</item>
-    <item name="screen.on.display0">90.3</item>
-    <item name="screen.full.display0">514</item>
-    <item name="bluetooth.active">23.4</item>
-    <item name="bluetooth.on">1.1</item>
+    <item name="screen.on.display0">59.80</item>
+    <item name="screen.full.display0">338.00</item>
+    <item name="bluetooth.active">11.2</item>
+    <item name="bluetooth.on">0.5</item>
     <item name="wifi.on">0.1</item>
-    <item name="wifi.active">243</item>
-    <item name="wifi.scan">44.8</item>
-    <item name="audio">34.3</item>
-    <item name="video">66.2</item>
-    <item name="camera.flashlight">229.8</item>
-    <item name="camera.avg">532.9</item>
-    <item name="gps.on">31.5</item>
+    <item name="wifi.active">174.5</item>
+    <item name="wifi.scan">35.7</item>
+    <item name="audio">34.2</item>
+    <item name="video">73.3</item>
+    <item name="camera.flashlight">238.1</item>
+    <item name="camera.avg">762.90</item>
+    <item name="gps.on">28.00</item>
     <item name="radio.active">15</item>
-    <item name="radio.scanning">50.7</item>
+    <item name="radio.scanning">55.1</item>
     <array name="radio.on">
-        <value>3.9</value>
-        <value>3.9</value>
+        <value>1.1</value>
+        <value>1.1</value>
     </array>
     <array name="cpu.clusters.cores">
         <value>6</value>
