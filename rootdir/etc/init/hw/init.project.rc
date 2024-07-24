@@ -80,6 +80,42 @@ on post-fs-data
     chown system system /sys/class/leds/vibrator_single/vbat_monitor
     # BSP:modify for LRA XLWYEHLYEL-1 by hongwu.zhan 20221104 end
 
+    # For LG7n vibrator
+    chown system system /sys/class/leds/vibrator/trigger
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/brightness
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/leds/vibrator/activate_mode
+    chown system system /sys/class/leds/vibrator/bullet_nr
+    chown system system /sys/class/leds/vibrator/cali
+    chown system system /sys/class/leds/vibrator/cont
+    chown system system /sys/class/leds/vibrator/cont_brk_time
+    chown system system /sys/class/leds/vibrator/cont_drv_lvl
+    chown system system /sys/class/leds/vibrator/cont_drv_time
+    chown system system /sys/class/leds/vibrator/cont_wait_num
+    chown system system /sys/class/leds/vibrator/f0
+    chown system system /sys/class/leds/vibrator/f0_save
+    chown system system /sys/class/leds/vibrator/gain
+    chown system system /sys/class/leds/vibrator/gun_type
+    chown system system /sys/class/leds/vibrator/haptic_audio
+    chown system system /sys/class/leds/vibrator/index
+    chown system system /sys/class/leds/vibrator/loop
+    chown system system /sys/class/leds/vibrator/lra_resistance
+    chown system system /sys/class/leds/vibrator/osc_cali
+    chown system system /sys/class/leds/vibrator/osc_save
+    chown system system /sys/class/leds/vibrator/power
+    chown system system /sys/class/leds/vibrator/prctmode
+    chown system system /sys/class/leds/vibrator/ram_num
+    chown system system /sys/class/leds/vibrator/ram_update
+    chown system system /sys/class/leds/vibrator/ram_vbat_comp
+    chown system system /sys/class/leds/vibrator/register
+    chown system system /sys/class/leds/vibrator/rtp
+    chown system system /sys/class/leds/vibrator/sram_size
+    chown system system /sys/class/leds/vibrator/trig
+    chown system system /sys/class/leds/vibrator/vbat_monitor
+
 on init
     # Refer to http://source.android.com/devices/tech/storage/index.html
     # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
