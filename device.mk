@@ -253,6 +253,10 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     libcppbor_external.vendor:64
 
+# Libshims
+PRODUCT_PACKAGES += \
+    libshim_sensors
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.transsion
