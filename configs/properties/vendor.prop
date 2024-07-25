@@ -325,9 +325,6 @@ init.userspace_reboot.is_supported=true
 # USB
 ro.vendor.usb.kpoc_adb=0
 
-# Vibrator
-ro.vendor.tran.vibrator.option=single
-
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
