@@ -97,7 +97,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
-    libdng_sdk.vendor
+    libdng_sdk.vendor \
+    libexpat.vendor \
+    libpng.vendor
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -130,6 +132,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
+    libion.vendor \
+    libui.vendor \
     android.hardware.graphics.mapper@4.0.vendor \
     libdrm.vendor 
 
@@ -166,6 +170,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
+PRODUCT_PACKAGES += \
+    libgatekeeper.vendor
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
@@ -173,6 +180,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -188,6 +198,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
     libhidltransport \
+    libhidlmemory.vendor \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
@@ -244,6 +255,9 @@ PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+
+PRODUCT_PACKAGES += \
+    libnetutils.vendor
 
 # Keymint
 PRODUCT_PACKAGES += \
@@ -418,7 +432,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1.vendor \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.1-service.multihal \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -458,6 +473,10 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
     prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+
+PRODUCT_PACKAGES += \
+    libunwindstack.vendor \
+    libutilscallstack.vendor
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
