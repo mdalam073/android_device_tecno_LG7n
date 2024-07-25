@@ -60,7 +60,7 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.vibrator-service.mediatek)
-            "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "$2"
+            "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "${2}"
             ;;
         vendor/lib*/libspeech_enh_lib.so|\
         vendor/lib64/libwifi-hal-mtk.so|\
@@ -78,11 +78,11 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             ;;
         lib64/libsink.so)
-            "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
+            "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.gnss-service.mediatek |\
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
-            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
+            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
             sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
@@ -92,10 +92,10 @@ function blob_fixup {
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
-            sed -i 's/start/enable/' "$2"
+            sed -i 's/start/enable/' "${2}"
             ;;
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
-            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
@@ -105,19 +105,19 @@ function blob_fixup {
         vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
         "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
             ;;
-       vendor/lib*/hw/android.hardware.thermal@2.0-impl.so)
+        vendor/lib*/hw/android.hardware.thermal@2.0-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
-      vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
+        vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
             "$PATCHELF" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "$2"
             "$PATCHELF" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "$2"
             "$PATCHELF" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "$2"
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
-      vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
-      vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
-      vendor/lib64/mt6789/libaalservice.so|\
-      vendor/lib64/mt6789/libcam.utils.sensorprovider.so)
+        vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
+        vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
+        vendor/lib64/mt6789/libaalservice.so|\
+        vendor/lib64/mt6789/libcam.utils.sensorprovider.so)
             "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
     esac
