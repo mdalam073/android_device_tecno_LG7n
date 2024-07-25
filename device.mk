@@ -188,8 +188,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health-service.mt6789-recovery \
     charger_res_images_vendor
 
 # HIDL
@@ -396,11 +395,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V2-ndk.vendor \
     android.hardware.power@1.3.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    $(LOCAL_PATH)/configs/perf/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
-    $(LOCAL_PATH)/configs/perf/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
