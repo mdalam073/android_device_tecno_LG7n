@@ -474,6 +474,9 @@ PRODUCT_PACKAGES += \
     libunwindstack.vendor \
     libutilscallstack.vendor
 
+PRODUCT_PACKAGES += \
+    libui_shim.vendor
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwifi-hal-wrapper \
