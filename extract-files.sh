@@ -102,6 +102,9 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             ;;
+        vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
         vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service | vendor/lib64/android.hardware.power-service-mediatek.so)
         "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "$2"
             ;;
