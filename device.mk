@@ -476,6 +476,7 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
+    libwifi-hal-wrapper \
     android.hardware.wifi-service \
     wpa_supplicant \
     hostapd \
