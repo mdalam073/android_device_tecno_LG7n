@@ -25,4 +25,20 @@ PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=LG7n \
+    RisingMaintainer="Ren (Shirayuki39/Shirayuki428)" \
     BuildFingerprint=TECNO/LG7n-GL/TECNO-LG7n:12/SP1A.210812.016/240530V1260:user/release-keys
+
+WITH_GMS := true
+TARGET_CORE_GMS := true
+PRODUCT_PACKAGES += \
+   MarkupGoogle \
+   LatinIMEGooglePrebuilt \
+   Velvet \
+   PrebuiltDeskClockGoogle
+
+PRODUCT_NO_CAMERA := false
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_HAS_UDFPS := false
+TARGET_USE_GOOGLE_TELEPHONY := true
+RISING_MAINTAINER := Ren (Shirayuki39/Shirayuki428)
