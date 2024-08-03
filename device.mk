@@ -343,11 +343,11 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
-	FrameworksResOverlay \
+	FrameworksResOverlayLG7n \
 	SettingsProviderOverlayLG7n \
-	SettingsResOverlay \
-	SystemUIOverlay \
-	TelephonyOverlay \
+	SettingsResOverlayLG7n \
+	SystemUIOverlayLG7n \
+	TelephonyOverlayLG7n \
 	WifiResOverlayLG7n
 
 # Lineage-Specific Overlays
