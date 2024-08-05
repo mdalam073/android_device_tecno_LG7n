@@ -347,7 +347,8 @@ PRODUCT_PACKAGES += \
 	SettingsProviderOverlayLG7n \
 	SettingsResOverlay \
 	SystemUIOverlay \
-	TelephonyOverlay
+	TelephonyOverlay \
+	WifiResOverlayLG7n
 
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
