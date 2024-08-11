@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_LG7n.mk
+    $(LOCAL_DIR)/derp_LG7n.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_LG7n-ap2a-user \
-    lineage_LG7n-ap2a-userdebug \
-    lineage_LG7n-ap2a-eng
+    derp_LG7n-ap2a-user \
+    derp_LG7n-ap2a-userdebug \
+    derp_LG7n-ap2a-eng
