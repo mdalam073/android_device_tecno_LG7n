@@ -1,4 +1,4 @@
-## lg7n package version: LG7n-H894DEFGHI-T-GL-231102V2897, unless stated otherwise
+## lg7n package version: LG7n-H892ABCD-S-GL-240530V1767, unless stated otherwise
 
 # AEE
 vendor/lib/libaedv.so
