@@ -179,6 +179,7 @@ service.sf.prime_shader_cache=0
 debug.sf.frame_rate_multiple_threshold=90
 debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_hwc_vds=0
+ro.vendor.transsion.backlight_12bit=1
 
 # DRM
 drm.service.enabled=true
@@ -275,7 +276,7 @@ ro.vendor.mtk.c2.vdec.fmt.support.level=1
 debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
-ro.vendor.iomanager.support=1
+ro.vendor.iomanager.support=1ro.vendor.transsion.backlight_12bit=1
 ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
