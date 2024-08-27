@@ -1,0 +1,32 @@
+[
+  {
+    "remote"      : "github",
+    "repository"  : "Anything-at-25-00/android_vendor_tecno_LG7n",
+    "branch"      : "fourteen",
+    "target_path" : "vendor/tecno/LG7n"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "LineageOS/android_hardware_mediatek",
+    "branch"      : "lineage-21",
+    "target_path" : "hardware/mediatek"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "Anything-at-25-00/device_tecno_lg7n_kernel",
+    "branch"      : "lineage-21",
+    "target_path" : "device/tecno/LG7n-kernel"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "LineageOS/android_device_mediatek_sepolicy_vndr",
+    "branch"      : "lineage-21",
+    "target_path" : "device/mediatek/sepolicy_vndr"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "Anything-at-25-00/hardware_transsion",
+    "branch"      : "lineage-20.0",
+    "target_path" : "hardware/transsion"
+  }
+]
