@@ -46,6 +46,7 @@ TARGET_OTA_ASSERT_DEVICE := LG7n,TECNO-LG7n,lg7n
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/phoneinfo.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # SEPolicy
