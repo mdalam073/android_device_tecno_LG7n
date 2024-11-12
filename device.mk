@@ -18,6 +18,7 @@ TARGET_SCREEN_WIDTH := 720
 # Overlays
 PRODUCT_PACKAGES += \
 	FrameworksResOverlayLG7n \
+    SettingsResOverlayLG7n \
     SettingsProviderOverlayLG7n \
     SystemUIOverlayLG7n
 
