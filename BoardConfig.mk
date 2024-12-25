@@ -6,7 +6,7 @@
 
 # Include the common OEM chipset BoardConfig.
 include device/tecno/mt6789-common/BoardConfigCommon.mk
-
+-include vendor/lineage-priv/keys/keys.mk
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lg7n
 
